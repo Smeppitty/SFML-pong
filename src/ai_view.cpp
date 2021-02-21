@@ -23,7 +23,7 @@ void AI_View::AI_Tracking(const float& dt)
     }
     if((sliderPos.x - ballPos.x < 100.0f)&&ballPos.y + ballDim.y > sliderPos.y + AI_slider->getShape().getSize().y/2.0f)
     {   
-        this->AI_slider->addPos(sf::Vector2f(0.0f, AI_slider->getSpeed()*dt));     
+        this->AI_slider->addPos(sf::Vector2f(0.0f, AI_slider->getSpeed()*dt*5.0));     
     }   
 }
 

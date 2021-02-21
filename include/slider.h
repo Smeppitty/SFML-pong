@@ -10,7 +10,7 @@ private:
     sf::Vector2f position;
     sf::Vector2f dimensions;
     int playerNum;
-    float sliderSpeed = 100.0f;
+    float sliderSpeed = 20.0f;
 
 public:
 	Slider(sf::Vector2f position, sf::Vector2f dimensions, sf::Color fillColor);
