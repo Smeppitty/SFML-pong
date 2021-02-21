@@ -189,7 +189,7 @@ void Player_View::render()
         this->window->draw(this->game_logic->ballObj()->getShape());
         if(!(this->p1 < 11 && this->p2 < 11))
         {
-            if(p1==11)
+            if(this->p1==11)
                 this->restartText.setString("Player 1 WINS! \n\nRestart? [R] \nMain Menu [M] \nQuit? [Q/Esc]");
             else
                 this->restartText.setString("Player 2 WINS! \n\nRestart? [R] \nMain Menu [M] \nQuit? [Q/Esc]");
