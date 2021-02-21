@@ -17,13 +17,13 @@ void AI_View::AI_Tracking(const float& dt)
     this->AI_slider = this->game_logic->P2();
 
     //this tracks the slider and the ball's position and moves the slider accordingly
-    if((this->sliderPos.x - ballPos.x < 400.0f)&& ballPos.y + ballDim.y < sliderPos.y + AI_slider->getShape().getSize().y/2.0f)
+    if(this->ballPos.y + this->ballDim.y < this->sliderPos.y + this->AI_slider->getShape().getSize().y/2.0f)
     {
-        this->AI_slider->addPos(sf::Vector2f(0.0f, -AI_slider->getSpeed()*0.9f));   
+        this->AI_slider->addPos(sf::Vector2f(0.0f, -this->AI_slider->getSpeed()*0.95f));   
     }
-    if((this->sliderPos.x - ballPos.x < 400.0f)&&ballPos.y + ballDim.y > sliderPos.y + AI_slider->getShape().getSize().y/2.0f)
+    if(this->ballPos.y + this->ballDim.y > this->sliderPos.y + this->AI_slider->getShape().getSize().y/2.0f)
     {   
-        this->AI_slider->addPos(sf::Vector2f(0.0f, AI_slider->getSpeed()*0.9f));     
+        this->AI_slider->addPos(sf::Vector2f(0.0f, this->AI_slider->getSpeed()*0.95f));     
     }   
 }
 

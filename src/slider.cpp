@@ -12,7 +12,7 @@ Slider::Slider(sf::Vector2f position, sf::Vector2f dimensions, sf::Color fillCol
 
 void Slider::addPos(sf::Vector2f pos)
 {    
-        if(this->sliderShape.getPosition().y + pos.y < 600.0f && this->sliderShape.getPosition().y + pos.y > 0.0f)
+        if(this->sliderShape.getPosition().y + pos.y < 600.0f && this->sliderShape.getPosition().y + pos.y*2> 0.0f)
             this->sliderShape.setPosition(this->sliderShape.getPosition() + pos);
 }
 
