@@ -11,7 +11,7 @@ private:
     //default window size vector
     sf::Vector2f windowSize = sf::Vector2f(800.0f, 600.0f);
     std::shared_ptr<Game_Logic> game_logic;
-    std::shared_ptr<sf::RenderWindow> window = std::make_shared<sf::RenderWindow>(sf::VideoMode(800,600,32), "Pong", sf::Style::Titlebar | sf::Style::Close);
+    std::shared_ptr<sf::RenderWindow> window = std::make_shared<sf::RenderWindow>(sf::VideoMode(800,600,32), "Pong");
     sf::View view;
     
     sf::Font font;
