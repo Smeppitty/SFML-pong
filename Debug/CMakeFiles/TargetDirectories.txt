@@ -1,0 +1,4 @@
+/home/david/Desktop/pong/Debug/CMakeFiles/rebuild_cache.dir
+/home/david/Desktop/pong/Debug/CMakeFiles/edit_cache.dir
+/home/david/Desktop/pong/Debug/CMakeFiles/pong.dir
+/home/david/Desktop/pong/Debug/CMakeFiles/pong_core.dir
