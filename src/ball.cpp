@@ -16,9 +16,9 @@ void Ball::collisionDetection(std::shared_ptr<Slider> slider, sf::Vector2f windo
 {
     //ball to top and bottom of screen 
     if (ballShape.getPosition().y - this->dimensions.y < 0.0f)
-        velocity.y *= -1.0f;
+        velocity.y = 1.5f;
     if (ballShape.getPosition().y + this->dimensions.y > windowSize.y)
-        velocity.y *= -1.0f;
+        velocity.y = -1.5f;
 
     //ball to player 1 and player 2 side collision
     if(ballShape.getPosition().x + this->dimensions.x > windowSize.x)
