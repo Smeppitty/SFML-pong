@@ -9,6 +9,7 @@ private:
     std::shared_ptr<Game_Logic> game_logic;
     sf::Vector2f ballPos;
     sf::Vector2f ballDim;
+    sf::Vector2f ballVel;
     sf::Vector2f sliderPos;
     std::shared_ptr<Slider> AI_slider;
     
